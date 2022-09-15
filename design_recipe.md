@@ -33,8 +33,10 @@ _Make a list of examples of what the method will take and return._
 ```ruby
 check_grammar('Some mighty fine grammar.') -> true
 check_grammar('some meh grammar.') -> false
+check_grammar('Not the worst thing') -> false
 check_grammar('some horrendous grammer') -> false
 check_grammar('Clearly this is still fine!') -> true
+check_grammar('sadly this isn\'t!') -> false
 check_grammar('This grammar is still good?') -> true
 check_grammar('i don\'t think this grammar is acceptable?') -> false
 
