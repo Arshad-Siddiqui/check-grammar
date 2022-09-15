@@ -38,5 +38,10 @@ RSpec.describe '#check_grammar' do
       result = check_grammar('Clearly this is still fine!')
       expect(result).to eq true
     end
+
+    it 'Functions regardless of string size' do
+      result = check_grammar('E.')
+      expect(result).to eq true
+    end
   end
 end
